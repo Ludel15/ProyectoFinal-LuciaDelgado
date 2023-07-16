@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap&family=Lora');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Clases para el header */
+header.cabecera {
+    margin: 0;
+    padding: 0;
+    background-color: #8f2323;
+}
+
+header.cabecera div{
+    text-align: center;
+}
+
+header.cabecera div p{
+    font-family: 'Lora', serif; 
+    font-size: small;
+    margin: auto;
+    letter-spacing: 1px; 
+    color: #fff;
+
+}
+
+/* Clases para el menú de navegación */
+.claseNav{
+    font-family: 'Lora', serif; 
+    color: #f1f1f1;
+    background-color: #752424;
+    padding: 10px;
+}
+  
+.claseImgNav{
+    height: 4rem;
+    width: 10rem;
+}
+  
+.claseListaNav{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.claseItemNav{
+    margin-left: 10px;
+}
+  
+.claseAnclaNav{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-transform: uppercase;
+    padding: 0.4rem;
+}
+
+.claseAnclaNav:hover{
+    color: #fff;
+    background-color: #7e7777;
+    padding: 2.3rem;
+    
+}
+
+/* Cuando se colapsa el menú, se aplican los estilos en las anclas del menú de navegación para simular el efecto de un botón*/
+@media screen and (max-width: 1200px){
+    .claseAnclaNav:hover{
+        margin-top: 0.8rem;
+        padding: 0.4rem;
+    }
+}
+
+/* Clases para el footer */
+.claseFooter {
+    background-color: #772020;
+    padding: 0.5rem;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.claseFooterLista {
+    list-style: none;
+}
+
+.claseFooterItem {
+    padding: 0.6rem;
+}
+.claseFooterItem:hover {
+    background-color: grey;
+}
+
+.claseFooterItem a{
+    color: #fff;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-transform: uppercase;
+    padding: 0.4rem;
+}
+
+
+.footerNav{
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1200px){
+    .footerNav{
+        margin-top: 1.6rem;
+    }
+}
+
+/* Texto presentación de la Home */
+.principalTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 1.3rem;
+}
+  
+.principalTextContent {
+    width: 50%;
+    margin: 1.3rem;
+}
+
+.principalTextContent p{
+    text-align: justify;
+}
+
+/* Generales */
+.centrado{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Lora', serif; 
+    text-transform: uppercase;
+    font-size: large;
+    color: #752424; 
+}
+
+.text{
+    color: #4d4d4d; 
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify; 
+    font-size: medium;
+}
+
+.titleSection{
+    font-family: 'Lora', serif; 
+    margin: 1rem;
+    font-size: x-large; 
+    padding: 10px; 
+    color: #752424;
+    text-transform: uppercase;
+}
+
+/* Clases para la page About us*/
+.containerDividido{
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 2.3rem 3rem;
+    border: 5rem solid #e7e6e6;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.containerDividido h2{
+    color: #752424;
+}
+
+/* Clases para la page Contacto */
+.campos label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+div.textoHorarios h1{
+    font-family: 'Lora', serif; 
+    font-size: large;
+    margin: 0 50px 0 50px;
+    text-align: justify;
+    padding-top: 50px;
+    color: #752424;
+    text-transform: none;
+}
+
+/*Estilos para el mapa de google maps que aparece en la página de contacto*/
+.mapContainer {
+    overflow:hidden;
+    width: 50%;
+    margin: auto;
+    padding-bottom:30rem;
+    position:relative;
+    height:0;
+}
+
+.mapContainer iframe{
+    left:0;
+    top:0.5rem;
+    height:80%;
+    width:100%;
+    position:absolute;
+    margin-bottom: 4rem;
+}
+
+/* Clases para la page Términos y condiciones */
+.containerTerms{
+    width: 80%;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+    font-style: italic;
+}
+
+.containerTerms h1{
+    font-weight: bold;
+}
+
+/* Clases para la page Productos */
+.containerProductCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.productCard {
+    width: 300px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 1.8rem;
+}
+
+.productCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.productCard h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.productCard p {
+    font-size: 14px;
+    color: #646363;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.productCard button {
+    background-color: #752424;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.grid-container {
+display: grid;
+background-color: rgb(92, 94, 94);
+gap: 10px;
+grid-template-areas: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.contenedor {
+    width: auto; /* Ancho absoluto de 500 píxeles */
+    height: 35px;
+    margin: auto; /* Centra el contenedor horizontalmente en la página */
+    background-color: #68033e; /* Color de fondo del contenedor (puedes cambiarlo o quitarlo) */
+    padding: 20px; /* Espacio interno alrededor del contenido (opcional) */
+  }
+
+  .claseContactos {
+    background-color: #aca9a9
+
+
+  }
