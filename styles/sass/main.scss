@@ -3,6 +3,11 @@
 @import 'nav';
 @import 'footer';
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 // Texto presentación de la Home
 .principalTextContainer {
     display: flex;

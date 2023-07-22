@@ -5,22 +5,22 @@
     background-color: $color-light;
     padding: 10px;
   
-    &.claseImgNav {
+    .claseImgNav {
       height: 4rem;
       width: 10rem;
     }
   
-    &.claseListaNav {
+    .claseListaNav {
       list-style: none;
       display: flex;
       justify-content: flex-end;
     }
   
-    &.claseItemNav {
+    .claseItemNav {
       margin-left: 10px;
     }
   
-    &.claseAnclaNav {
+    .claseAnclaNav {
       text-decoration: none;
       color: #fff;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
