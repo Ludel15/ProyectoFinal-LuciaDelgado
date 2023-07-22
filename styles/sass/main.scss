@@ -1,0 +1,190 @@
+@import 'vars';
+@import 'header';
+@import 'nav';
+@import 'footer';
+
+// Texto presentación de la Home
+.principalTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3rem;
+
+    .principalTextContent {
+        width: 50%;
+        margin: 1.3rem;
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+// Generales
+.centrado {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-family: $font-common;
+    text-transform: uppercase;
+    font-size: large;
+    color: $color-light;
+}
+
+.text {
+    color: #4d4d4d;
+    margin: 0;
+    font-family: $font-secondary;
+    text-align: justify;
+    font-size: medium;
+}
+
+.titleSection {
+    font-family: $font-common;
+    margin: 1rem;
+    font-size: x-large;
+    padding: 10px;
+    color: $color-light;
+    text-transform: uppercase;
+}
+
+// Clases para la page About us
+.containerDividido {
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 2.3rem 3rem;
+    border: 5rem solid #e7e6e6;
+    font-family: $font-secondary;
+
+    h2 {
+        color: $color-light;
+    }
+}
+
+// Clases para la page Contacto
+.campos {
+    label,
+    input,
+    textarea {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+div.textoHorarios {
+    h1 {
+        font-family: $font-common;
+        font-size: large;
+        margin: 0 50px 0 50px;
+        text-align: justify;
+        padding-top: 50px;
+        color: $color-light;
+        text-transform: none;
+    }
+}
+
+// Estilos para el mapa de google maps que aparece en la página de contacto
+.mapContainer {
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 30rem;
+    position: relative;
+    height: 0;
+
+    iframe {
+        left: 0;
+        top: 0.5rem;
+        height: 80%;
+        width: 100%;
+        position: absolute;
+        margin-bottom: 4rem;
+    }
+}
+
+// Clases para la page Términos y condiciones
+.containerTerms {
+    width: 80%;
+    margin: auto;
+    font-family: $font-secondary;
+    text-align: justify;
+    font-style: italic;
+
+    h1 {
+        font-weight: bold;
+    }
+}
+
+// Clases para la page Productos
+.containerProductCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+    .productCard {
+        width: 300px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 1.8rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-family: $font-secondary;
+        }
+
+        p {
+            font-size: 14px;
+            color: #646363;
+            margin-bottom: 20px;
+            font-family: $font-secondary;
+        }
+
+        button {
+            background-color: $color-light;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 3px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+
+// Additional styles
+.grid-container {
+    display: grid;
+    background-color: rgb(92, 94, 94);
+    gap: 10px;
+    grid-template-areas: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.contenedor {
+    width: auto;
+    height: 35px;
+    margin: auto;
+    background-color: #68033e;
+    padding: 20px;
+}
+
+.claseContactos {
+    background-color: #aca9a9;
+}
+
+
+
+

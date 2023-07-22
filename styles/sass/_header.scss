@@ -1,0 +1,28 @@
+@import 'vars';
+
+//Styles para el header
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: $color-strong;
+  
+    div {
+      text-align: center;
+  
+      p {
+        font-family: 'Lora', serif;
+        font-size: small;
+        margin: auto;
+        letter-spacing: 1px;
+        color: #fff;
+      }
+    }
+}
+  
+  
+  
+  
+  
+  
+  
